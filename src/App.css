@@ -1,0 +1,262 @@
+/* Fonts Poppins with google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bg-satu {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0 0 12px 12px;
+}
+nav {
+  max-width: 980px;
+  position: absolute;
+  top: 0px;
+  margin-top: 40px;
+  padding: 0 68px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  background-color: #2D5D5F;
+  padding: 6px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+nav ul li {
+  height: 8px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 10px 18px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1px;
+}
+li:nth-child(2) {
+ border-left: solid #FFF509 3px;
+ border-right: solid #FFF509 3px;
+}
+nav button {
+  border: none;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #FFF509;
+  color: #2D5D5F;
+}
+.header .icon {
+  width: 30%;
+  position: absolute;
+}
+.header .ticketing {
+  position: absolute;
+  bottom: -40px;
+  width: 90%;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F1F1F1;
+  box-shadow: 0px 6px 20px 10px rgba(0, 0, 0, 0.25);
+}
+.header .ticketing .side {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header .ticketing .side-left {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.header .ticketing .side img {
+  width: 50px;
+  height: 50px;
+}
+.header .ticketing .side div {
+  border-left: solid #2D5D5F 3px;
+  padding-left: 8px;
+}
+.header .ticketing .side p {
+  color: #2D5D5F;
+  line-height: 15px;
+}
+.header .ticketing button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #FFF509;
+  color: #2D5D5F;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+/* End Navigation & Header */
+/* Start section */
+.container-section {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 60px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+.container-section .menu-wrap{
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+}
+.container-section .menu-wrap .menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.container-section .menu-wrap .menu img {
+  width: 100%;
+}
+.container-section .menu-wrap .menu p {
+  position: absolute;
+  width: 100%;
+  background-color: #2D5D5F;
+  color: #F1F1F1;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 6px;
+  bottom: 0px;
+}
+.container-section .menu-contain{
+  width: 100%;
+  height: auto;
+}
+/* Card */
+.container-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background-image: url(./asset/img/bg-card.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-card .wraper-card{
+  padding: 18px;
+  background: rgb(45,93,95);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 6px;
+  background: linear-gradient(0deg, rgba(45,93,95,0) 0%, rgba(45,93,95,1) 53%);
+  width: 100%;
+  height: 100%;
+}
+.container-card .wraper-card h2 {
+  border: solid white 2px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 4px;
+  color: white;
+  font-size: 1rem;
+}
+.container-card .wraper-card .card-price-contain{
+ height: 100%;
+}
+.container-card .wraper-card .card-price-contain .card-price-parent{
+  margin: 5px;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container-card .wraper-card .card-price-contain .card-price-parent .card-price {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.container-card .wraper-card .card-price-contain .card-price-parent .card-price h3 {
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.container-card .wraper-card .card-price-contain .card-price-parent .card-price .price-list-contain {
+  display: flex;
+  height: 88%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+
+}
+.container-card .wraper-card .card-price-contain .card-price-parent .card-price .price-list-contain h2 {
+  position: relative;
+  width: 110px;
+  height: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2D5D5F;
+}
+.container-card .wraper-card .card-price-contain .card-price-parent .card-price .price-list-contain h2 span {
+  font-size: 44px;
+  position: absolute;
+}
+.container-card .wraper-card .card-price-contain .card-price-parent .card-price .price-list-contain h2 span:nth-child(1) {
+  font-size: 18px;
+  position: absolute;
+  color: #6a910a;
+  top: 0;
+  left: 0;
+}
+.container-card .wraper-card .card-price-contain .card-price-parent .card-price .price-list-contain h2 span:nth-child(3) {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.container-card .wraper-card .card-price-contain .card-price-parent .card-price .price-list-contain .pricelist-parent{
+  background-color: #F1F1F1;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  border-radius: 12px;
+}
+.container-card .wraper-card .card-price-contain .card-price-parent .card-price .price-list-contain .pricelist-parent .price-list {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container-card .wraper-card .card-price-contain .card-price-parent .card-price .price-list-contain .price-list img {
+  width: 16px;
+}
+.container-card .wraper-card .card-price-contain .card-price-parent .card-price .price-list-contain .price-list p {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #2D5D5F;
+}
