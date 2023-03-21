@@ -1,6 +1,6 @@
-import Checklist from "../asset/img/checklist.png"
+import Checklist from "../checklist.png";
 
-function Card() {
+function Pricing() {
     return(
         <div className="container-card">
             <div className="wraper-card">
@@ -57,4 +57,4 @@ function Card() {
         </div>
     )
 }
-export default Card;
+export default Pricing;

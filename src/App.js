@@ -1,6 +1,6 @@
 import './App.css';
 import Navigation from "./components/navigation.js"
-import Section from './components/section';
+import Section from './components/index-section.js';
 
 function App() {
   return (

@@ -5,12 +5,12 @@ import Animals2 from "../asset/img/animals2.png"
 function Navigation(){
     return(
         <div className="header">
-            <img src={Bg1} className="bg-satu"></img>
+            <div className="bg-satu"></div>
                 <nav>
                     <ul className="nav-left">
-                        <li>Home</li>
-                        <li>Profile</li>
-                        <li>Berita</li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Berita</a></li>
+                        <li><a href="">Contac</a></li>
                     </ul>
                     <button type="sumbit">Login</button>
                 </nav>

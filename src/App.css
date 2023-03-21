@@ -1,5 +1,10 @@
 /* Fonts Poppins with google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  background-color: #2D5D5F;
+}
+
 .header {
   position: relative;
   width: 100%;
@@ -9,12 +14,18 @@
   justify-content: center;
 }
 .bg-satu {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./asset/img/bg-1.png);
   border-radius: 0 0 12px 12px;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  background-color: red;
+  background-attachment: fixed;
 }
 nav {
-  max-width: 980px;
+  width: 90%;
   position: absolute;
   top: 0px;
   margin-top: 40px;
@@ -25,39 +36,52 @@ nav {
   align-items: center;
 }
 nav ul {
-  background-color: #2D5D5F;
-  padding: 6px 6px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  gap: 8px;
 }
 nav ul li {
-  height: 8px;
+  list-style: none;
+}
+nav ul li a {
+  height: 100%;
   display: flex;
   align-items: center;
   list-style: none;
-  padding: 10px 18px;
-  font-size: 0.8rem;
-  font-weight: 500;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
   color: white;
+  text-decoration: none;
+  /* border: solid 2px white; */
+  background-color: #2D5D5F;
+  border-radius: 10px;
   letter-spacing: 1px;
+  text-shadow: 2px 3px 8px #2D5D5F;
 }
-li:nth-child(2) {
- border-left: solid #FFF509 3px;
- border-right: solid #FFF509 3px;
+nav ul li a:hover{
+  color: #2D5D5F;
+  background-color: white;
+  transition: 0.1s;
+  text-shadow: none;
 }
 nav button {
   border: none;
   border-radius: 8px;
-  padding: 4px 12px;
+  padding: 6px 18px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   background-color: #FFF509;
   color: #2D5D5F;
 }
+nav button:hover{
+  transition: 0.1s;
+  text-decoration: underline;
+}
 .header .icon {
-  width: 30%;
+  height: 40%;
   position: absolute;
 }
 .header .ticketing {
@@ -65,11 +89,11 @@ nav button {
   bottom: -40px;
   width: 90%;
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #F1F1F1;
+  background-color: white;
   box-shadow: 0px 6px 20px 10px rgba(0, 0, 0, 0.25);
 }
 .header .ticketing .side {
@@ -89,7 +113,7 @@ nav button {
   height: 50px;
 }
 .header .ticketing .side div {
-  border-left: solid #2D5D5F 3px;
+  border-left: solid #8bbec0 2px;
   padding-left: 8px;
 }
 .header .ticketing .side p {
@@ -105,13 +129,26 @@ nav button {
   font-size: 0.9rem;
   font-weight: 700;
 }
+.header .ticketing button:hover{
+  background-color: #2D5D5F;
+  color: #FFF509;
+  transition: 0.1s;
+}
 /* End Navigation & Header */
 /* Start section */
+.body-section {
+  /* background-color: red; */
+  margin-top: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 .container-section {
   max-width: 600px;
   margin: auto;
-  margin-top: 60px;
-  padding: 20px;
+  padding: 16px;
+  border-radius: 12px;
   display: flex;
   justify-content: center;
   gap: 14px;
@@ -130,14 +167,18 @@ nav button {
 }
 .container-section .menu-wrap .menu img {
   width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
 }
-.container-section .menu-wrap .menu p {
+.container-section .menu-wrap .menu a {
   position: absolute;
   width: 100%;
-  background-color: #2D5D5F;
-  color: #F1F1F1;
-  font-weight: 500;
+  padding: 4px;
+  background-color: white;
+  color: #2D5D5F;
+  font-weight: 700;
   text-align: center;
+  text-decoration: none;
   border-radius: 6px;
   bottom: 0px;
 }
@@ -156,12 +197,11 @@ nav button {
 }
 .container-card .wraper-card{
   padding: 18px;
-  background: rgb(45,93,95);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 6px;
-  background: linear-gradient(0deg, rgba(45,93,95,0) 0%, rgba(45,93,95,1) 53%);
+  background: linear-gradient(0deg, rgba(45,93,95,0) 10%, rgba(45,93,95,0.9) 53%);
   width: 100%;
   height: 100%;
 }
@@ -256,6 +296,46 @@ nav button {
 }
 .container-card .wraper-card .card-price-contain .card-price-parent .card-price .price-list-contain .price-list p {
   font-size: 0.7rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #2D5D5F;
+}
+
+.container-card-peta{
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+ }
+ .wraper-card-peta{
+  background-color: aqua;
+ }
+.petamap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.petamap img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+/* RESPONSIVE */
+@media screen and (min-width:1100px) {
+
+}
+@media screen and (max-width:1100px){
+  
+  .body-section{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:800px){
+  .body-section {
+    
+  }
+}
+@media screen and (max-width:400px){
+
 }
